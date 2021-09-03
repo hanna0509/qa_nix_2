@@ -4,6 +4,7 @@ import ua.com.alevel.dao.EmployeeDao;
 import ua.com.alevel.entity.Employee;
 
 public class EmployeeService {
+
     private EmployeeDao employeeDao = new EmployeeDao();
 
     public void create(Employee employee) {
@@ -26,6 +27,3 @@ public class EmployeeService {
         employeeDao.delete(id);
     }
 }
-
-
-

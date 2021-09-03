@@ -7,7 +7,6 @@ import java.util.Scanner;
 public class SymbolsCounter {
 
     public void symbolsCounter() {
-
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter string with any symbols to count characters in it:");
         String str = s.nextLine();

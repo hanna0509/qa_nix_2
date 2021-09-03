@@ -8,7 +8,6 @@ import java.util.Scanner;
 public class EndOfLesson {
 
     public void endOfLesson() {
-
         Scanner s = new Scanner(System.in);
         System.out.print(" Do you want to know when lesson ends? Please enter the number of lesson: ");
 

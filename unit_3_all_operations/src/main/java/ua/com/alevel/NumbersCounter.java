@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class NumbersCounter {
 
     public void numbersCounter() {
-
         Scanner s = new Scanner(System.in);
         System.out.println("Please enter string with any symbols including numbers:");
         String str = s.nextLine();

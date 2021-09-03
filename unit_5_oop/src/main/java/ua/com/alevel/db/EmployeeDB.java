@@ -13,14 +13,6 @@ public class EmployeeDB {
     private int numberEEs = 0;
     private Employee[] employees = new Employee[size];
 
-    // public EmployeeDB(int k) {
-    //     if (k > 0) {
-    //         this.employees = new Employee[k];
-    //     }else {
-    //          throw new IllegalArgumentException("The length should be more than 0!");
-    //     }
-//    }
-
     public void create(Employee employee) {
 
         if (size <= numberEEs) {
