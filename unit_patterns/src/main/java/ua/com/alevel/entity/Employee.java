@@ -4,17 +4,13 @@ import java.util.Date;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Employee {
+public class Employee extends BaseEntity {
 
-    private String Id;
     private String firstName;
     private String lastName;
     private Date birthDay;
-    private String departmentName;
-
-    public String getId() {
-        return Id;
-    }
+    private boolean isVisible;
+    private List<String> departmentIds = new ArrayList<>();
 
     public String getFirstName() {
         return firstName;
@@ -28,12 +24,12 @@ public class Employee {
         return birthDay;
     }
 
-    public String getDepartmentName() {
-        return departmentName;
+    public boolean isVisible() {
+        return isVisible;
     }
 
-    public void setId(String id) {
-        Id = id;
+    public List<String> getDepartmentIds() {
+        return departmentIds;
     }
 
     public void setFirstName(String firstName) {
@@ -48,7 +44,11 @@ public class Employee {
         this.birthDay = birthDay;
     }
 
-    public void setDepartmentName(String departmentName) {
-        this.departmentName = departmentName;
+    public void setVisible(boolean visible) {
+        isVisible = visible;
+    }
+
+    public void setDepartmentIds(List<String> departmentIds) {
+        this.departmentIds = departmentIds;
     }
 }
